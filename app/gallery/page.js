@@ -1,49 +1,45 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { vehicles } from "@/data/vehicles";
+import { parts } from "@/data/parts";
 
 const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80", alt: "Showroom" },
-  { src: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80", alt: "Premium vehicles" },
-  { src: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=800&q=80", alt: "Auto service" },
-  { src: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80", alt: "Mercedes-Benz" },
-  { src: "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80", alt: "SUV" },
-  { src: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=80", alt: "BMW" },
-  { src: "https://images.unsplash.com/photo-1614200187524-dc4b892acf16?w=800&q=80", alt: "Lexus" },
-  { src: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80", alt: "Interior" },
-  { src: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=800&q=80", alt: "Car detail" },
+  { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80", alt: "Auto parts" },
+  { src: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=800&q=80", alt: "Parts workshop" },
+  { src: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80", alt: "Engine components" },
+  { src: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80", alt: "Premium parts" },
 ];
 
 export default function GalleryPage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen pt-24">
+      <main className="min-h-screen pt-24 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="mb-12">
-            <h1 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">Gallery</h1>
-            <p className="text-slate-600 dark:text-slate-400">
-              A look at our vehicles, showroom, and service facilities.
+            <h1 className="text-3xl font-bold text-white mb-2">Gallery</h1>
+            <p className="text-neutral-400">
+              A look at our parts and what we offer — genuine Benz and Range Rover components.
             </p>
           </div>
 
-          {/* Vehicle showcase */}
+          {/* Parts showcase */}
           <div className="mb-16">
-            <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-6">Featured Vehicles</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {vehicles.slice(0, 6).map((v) => (
-                <div key={v.id} className="group relative aspect-[4/3] rounded-xl overflow-hidden">
+            <h2 className="text-xl font-semibold text-white mb-6">Parts Showcase</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {parts.slice(0, 8).map((p) => (
+                <div key={p.id} className="group relative aspect-square rounded-xl overflow-hidden bg-neutral-900/50 border border-neutral-800">
                   <Image
-                    src={v.image}
-                    alt={`${v.brand} ${v.model}`}
+                    src={p.image}
+                    alt={p.name}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent flex items-end p-4">
-                    <p className="text-white font-semibold">
-                      {v.brand} {v.model} ({v.year})
-                    </p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/70 to-transparent flex items-end p-4">
+                    <div>
+                      <p className="text-white font-semibold text-sm">{p.name}</p>
+                      <p className="text-neutral-200 text-xs">{p.brand}</p>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -52,10 +48,10 @@ export default function GalleryPage() {
 
           {/* General gallery */}
           <div>
-            <h2 className="text-xl font-semibold text-slate-900 dark:text-white mb-6">Showroom & Service</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <h2 className="text-xl font-semibold text-white mb-6">Our Space</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {galleryImages.map((img, i) => (
-                <div key={i} className="relative aspect-[4/3] rounded-xl overflow-hidden">
+                <div key={i} className="relative aspect-square rounded-xl overflow-hidden border border-neutral-800">
                   <Image
                     src={img.src}
                     alt={img.alt}

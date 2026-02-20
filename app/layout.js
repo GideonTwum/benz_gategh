@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Benzgate Ghana | Premium Cars & Reliable Auto Services in Accra",
-  description: "Benzgate Ghana - your trusted automotive dealership in Accra. Premium vehicle sales, repair & maintenance, spare parts, and pre-purchase inspection. East Legon, Accra.",
+  title: "Benzgate Ghana | Mercedes-Benz & Range Rover Spare Parts in Accra",
+  description: "Benzgate Ghana - genuine Mercedes-Benz and Range Rover spare parts in Accra. No used parts. East Legon. Your trusted source for Benz and Range Rover components.",
 };
 
 export default function RootLayout({ children }) {

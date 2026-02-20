@@ -6,24 +6,24 @@ import Footer from "@/components/Footer";
 export default function AboutPage() {
   const whyChoose = [
     {
-      title: "Years of Experience",
-      description: "Deep expertise in the automotive industry with a proven track record of satisfied customers.",
-      icon: "📋",
-    },
-    {
-      title: "Trusted Reputation",
-      description: "Built on transparency, quality, and customer-first service. We stand behind every vehicle and repair.",
-      icon: "⭐",
-    },
-    {
-      title: "Quality Assurance",
-      description: "Rigorous inspection and sourcing standards ensure you get vehicles you can rely on.",
+      title: "Genuine Parts Only",
+      description: "We do not sell used parts. Every item is genuine or OEM quality — reliability you can trust.",
       icon: "✓",
     },
     {
-      title: "Full Documentation",
-      description: "Complete paperwork and clear titles. No surprises when you drive away.",
-      icon: "📄",
+      title: "Benz Specialists",
+      description: "Mercedes-Benz is our core focus. We know the parts, the models, and what fits.",
+      icon: "◇",
+    },
+    {
+      title: "Range Rover Too",
+      description: "We also stock and source Range Rover parts for Sport, Evoque, Discovery, and more.",
+      icon: "▭",
+    },
+    {
+      title: "Trusted in Accra",
+      description: "Mechanics and car owners rely on us for quality parts and honest service.",
+      icon: "★",
     },
   ];
 
@@ -32,13 +32,13 @@ export default function AboutPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="relative h-64 lg:h-80 bg-slate-900 pt-24">
+        <section className="relative h-64 lg:h-80 bg-black pt-24">
           <div className="absolute inset-0">
             <Image
-              src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1920&q=80"
-              alt="Benzgate showroom"
+              src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1920&q=80"
+              alt="Auto parts"
               fill
-              className="object-cover opacity-50"
+              className="object-cover opacity-20"
             />
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-end pb-8">
@@ -47,22 +47,22 @@ export default function AboutPage() {
         </section>
 
         {/* Overview */}
-        <section className="py-20">
+        <section className="py-20 bg-black">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6">Our Story</h2>
-                <p className="text-slate-600 dark:text-slate-400 mb-4">
-                  Benzgate Ghana is a trusted automotive dealership and service provider based in Accra, specializing in premium vehicles and quality repairs. Founded with a passion for automobiles and a commitment to integrity, we have grown to become a preferred destination for car buyers and owners seeking reliable service.
+                <h2 className="text-2xl font-bold text-white mb-6">Our Story</h2>
+                <p className="text-neutral-400 mb-4">
+                  Benzgate Ghana is a trusted spare parts supplier based in Accra, specializing in Mercedes-Benz and Range Rover parts. We focus on what we do best: genuine, quality automotive parts — no used parts, no compromise.
                 </p>
-                <p className="text-slate-600 dark:text-slate-400">
-                  From our showroom in East Legon, we serve customers across Accra, Ghana, and beyond. Whether you&apos;re looking for a luxury sedan, a rugged SUV, or expert repair and maintenance, Benzgate delivers with professionalism and care.
+                <p className="text-neutral-400">
+                  From our location in East Legon, we serve mechanics, workshops, and car owners across Accra and Ghana. Whether you need brake pads, filters, suspension parts, or engine components — we supply the real thing.
                 </p>
               </div>
-              <div className="relative aspect-video rounded-xl overflow-hidden">
+              <div className="relative aspect-video rounded-xl overflow-hidden border border-neutral-800">
                 <Image
-                  src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80"
-                  alt="Premium vehicles at Benzgate"
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+                  alt="Spare parts"
                   fill
                   className="object-cover"
                 />
@@ -71,44 +71,24 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Mission & Vision */}
-        <section className="py-20 bg-slate-50 dark:bg-slate-900/50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12">
-              <div className="p-8 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">Our Mission</h3>
-                <p className="text-slate-600 dark:text-slate-400">
-                  To provide exceptional automotive solutions that exceed expectations. We aim to make premium vehicles and reliable repairs accessible to our customers while building lasting relationships based on trust and quality.
-                </p>
-              </div>
-              <div className="p-8 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700">
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">Our Vision</h3>
-                <p className="text-slate-600 dark:text-slate-400">
-                  To be the most trusted name in automotive sales and service in Ghana and the wider region. We envision a future where every customer drives with confidence, knowing they have a partner they can depend on.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose Benzgate */}
-        <section className="py-20">
+        {/* Why Choose */}
+        <section className="py-20 bg-black border-t border-neutral-800">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">Why Choose Benzgate?</h2>
-              <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                We go the extra mile so you can drive with peace of mind.
+              <h2 className="text-3xl font-bold text-white mb-4">Why Choose Benzgate?</h2>
+              <p className="text-neutral-400 max-w-2xl mx-auto">
+                We are committed to quality and integrity in every part we supply.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {whyChoose.map((item) => (
                 <div
                   key={item.title}
-                  className="text-center p-6 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-amber-500/50 transition-colors"
+                  className="text-center p-6 bg-neutral-900/50 rounded-xl border border-neutral-800"
                 >
-                  <div className="text-4xl mb-4">{item.icon}</div>
-                  <h3 className="font-semibold text-slate-900 dark:text-white mb-2">{item.title}</h3>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">{item.description}</p>
+                  <div className="text-3xl mb-4 text-neutral-400">{item.icon}</div>
+                  <h3 className="font-semibold text-white mb-2">{item.title}</h3>
+                  <p className="text-sm text-neutral-400">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -116,13 +96,13 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-slate-900 text-white">
+        <section className="py-16 bg-neutral-900/50 border-t border-neutral-800 text-white">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="text-2xl font-bold mb-4">Ready to Work With Us?</h2>
-            <p className="text-slate-400 mb-6">Visit our showroom or get in touch today.</p>
+            <h2 className="text-2xl font-bold mb-4">Need Parts?</h2>
+            <p className="text-neutral-400 mb-6">Visit our showroom or get in touch for inquiries.</p>
             <Link
               href="/contact"
-              className="inline-flex justify-center bg-amber-500 hover:bg-amber-400 text-slate-900 font-semibold px-8 py-3 rounded-md transition-colors"
+              className="inline-flex justify-center bg-white hover:bg-neutral-100 text-black font-semibold px-8 py-3 rounded-lg transition-colors"
             >
               Contact Us
             </Link>
