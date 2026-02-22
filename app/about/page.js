@@ -102,7 +102,7 @@ export default function AboutPage() {
             <p className="text-neutral-400 mb-6">Visit our showroom or get in touch for inquiries.</p>
             <Link
               href="/contact"
-              className="inline-flex justify-center bg-white hover:bg-neutral-100 text-black font-semibold px-8 py-3 rounded-lg transition-colors"
+              className="inline-flex justify-center bg-white hover:bg-neutral-100 !text-black font-semibold px-8 py-3 rounded-lg transition-colors"
             >
               Contact Us
             </Link>

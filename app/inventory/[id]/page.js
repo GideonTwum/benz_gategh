@@ -69,7 +69,7 @@ export default async function PartDetailPage({ params }) {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/contact?subject=Part%20Inquiry"
-                  className="inline-flex justify-center bg-white hover:bg-neutral-100 text-black font-semibold px-8 py-4 rounded-lg transition-colors"
+                  className="inline-flex justify-center bg-white hover:bg-neutral-100 !text-black font-semibold px-8 py-4 rounded-lg transition-colors"
                 >
                   Inquire About Part
                 </Link>

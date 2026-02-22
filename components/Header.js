@@ -42,7 +42,7 @@ export default function Header() {
             ))}
             <Link
               href="/inventory"
-              className="bg-white hover:bg-neutral-100 text-black font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-sm"
+              className="bg-white hover:bg-neutral-100 !text-black font-semibold px-5 py-2.5 rounded-lg transition-colors shadow-sm"
             >
               View Parts
             </Link>
@@ -81,7 +81,7 @@ export default function Header() {
               <Link
                 href="/inventory"
                 onClick={() => setMobileMenuOpen(false)}
-                className="mt-2 bg-white hover:bg-neutral-100 text-black font-semibold px-4 py-3 rounded-lg text-center"
+                className="mt-2 bg-white hover:bg-neutral-100 !text-black font-semibold px-4 py-3 rounded-lg text-center"
               >
                 View Parts
               </Link>

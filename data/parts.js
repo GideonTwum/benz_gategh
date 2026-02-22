@@ -13,7 +13,6 @@ const IMG = {
   turbocharger: encodeURI("/Turbo Charger For Mercedes Sprinter 904 903 901 902 1995-2006 - Top Quality.jpg"),
   alternator: encodeURI("/New Alternator For Mercedes Benz C300 Glk350 Ir_If 12-Volt 150 Amp 000-906-12-02, Size_Universal.jpg"),
   waterPump: encodeURI("/Car accessories Engine Water Pump for Mercedes Benz C180 C200 C250 C300 E200 C204 W204 W212 2742000800 2742001407 2742000701 2742000601 Auto parts Cooling System Water Coolant Pump.jpg"),
-  waterPumpAlt: encodeURI("/Gates 41557e Water Pump For Mercedes-benz.jpg"),
   battery100Ah: encodeURI("/Replacement Battery Type 019 - 12v 100ah Lucas Ls019 - Fits Mercedes Benz.jpg"),
   batteryAgm: encodeURI("/Varta 560901068j382 Starterbatterie Varta Agm Xev A8 Für Abarth Alfa Romeo.jpg"),
 };

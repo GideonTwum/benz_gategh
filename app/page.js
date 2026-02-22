@@ -42,7 +42,7 @@ export default function Home() {
                 >
                   <Link
                     href="/inventory"
-                    className="inline-flex justify-center bg-white hover:bg-neutral-100 text-black font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg"
+                    className="inline-flex justify-center bg-white hover:bg-neutral-100 !text-black font-semibold px-8 py-4 rounded-lg transition-colors shadow-lg"
                   >
                     Browse Parts
                   </Link>
@@ -151,7 +151,7 @@ export default function Home() {
               </div>
               <Link
                 href="/inventory"
-                className="bg-white hover:bg-neutral-100 text-black font-semibold px-6 py-3 rounded-lg transition-colors"
+                className="bg-white hover:bg-neutral-100 !text-black font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 View All Parts
               </Link>
@@ -211,7 +211,7 @@ export default function Home() {
             </p>
             <Link
               href="/about"
-              className="inline-flex justify-center bg-white hover:bg-neutral-100 text-black font-semibold px-8 py-3 rounded-lg transition-colors"
+              className="inline-flex justify-center bg-white hover:bg-neutral-100 !text-black font-semibold px-8 py-3 rounded-lg transition-colors"
             >
               Why Choose Benzgate
             </Link>
@@ -273,7 +273,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/inventory"
-                className="inline-flex justify-center bg-white hover:bg-neutral-100 text-black font-semibold px-8 py-4 rounded-lg transition-colors"
+                className="inline-flex justify-center bg-white hover:bg-neutral-100 !text-black font-semibold px-8 py-4 rounded-lg transition-colors"
               >
                 Browse Parts
               </Link>
