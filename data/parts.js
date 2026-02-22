@@ -1,20 +1,22 @@
 // Images from public folder (served from /) - paths are URL-encoded for special characters
+// encodeURI leaves '+' unencoded; Vercel CDN treats '+' as space, causing 404s. Must encode as %2B.
+const enc = (path) => encodeURI(path).replace(/\+/g, '%2B');
 const IMG = {
-  oilFilter: encodeURI("/Engine Oil Filter For Mercedes-benz Ml350 2012-2015 With 3_5l 6cyl Engine.jpg"),
-  oilFilterAlt: encodeURI("/6l Original Amg 0w40 Motoröl + Hengst Ölfilter Für Mercedes 45amg 2781800009.jpg"),
-  airFilter: encodeURI("/Air Filter Filtron Ap 148 Oe Replacement.jpg"),
-  cabinFilter: encodeURI("/Mercedes Benz C W203 Cabin Pollen Filter A2038301018 Genuine.jpg"),
-  engine: encodeURI("/Engine Block Options for Building Big-Inch LS Engines • LS Engine DIY.jpg"),
-  wiperBlades: encodeURI("/Bosch Windshield Wiper Blade Set Front 4478205400 Mercedes Benz Metris.jpg"),
-  wiperBladesAlt: encodeURI("/Mercedes-AMG C63 2016-2023 (C205) Coupe Replacement Wiper Blades Front Pair.jpg"),
-  brakePads: encodeURI("/Mercedes-Benz Brake Pad Set - GENUINE MERCEDES 0034206220.jpg"),
-  brakePadsGeneric: encodeURI("/Brake Pads, Brake Shoe Supplier & Manufacturer in China.jpg"),
-  brakeRotors: encodeURI("/Front Brake Rotor Set - Compatible with 2011 - 2020 Hyundai Elantra Sedan 2012 2013 2014 2015 2016 2017 2018 2019.jpg"),
-  turbocharger: encodeURI("/Turbo Charger For Mercedes Sprinter 904 903 901 902 1995-2006 - Top Quality.jpg"),
-  alternator: encodeURI("/New Alternator For Mercedes Benz C300 Glk350 Ir_If 12-Volt 150 Amp 000-906-12-02, Size_Universal.jpg"),
-  waterPump: encodeURI("/Car accessories Engine Water Pump for Mercedes Benz C180 C200 C250 C300 E200 C204 W204 W212 2742000800 2742001407 2742000701 2742000601 Auto parts Cooling System Water Coolant Pump.jpg"),
-  battery100Ah: encodeURI("/Replacement Battery Type 019 - 12v 100ah Lucas Ls019 - Fits Mercedes Benz.jpg"),
-  batteryAgm: encodeURI("/Varta 560901068j382 Starterbatterie Varta Agm Xev A8 Für Abarth Alfa Romeo.jpg"),
+  oilFilter: enc("/Engine Oil Filter For Mercedes-benz Ml350 2012-2015 With 3_5l 6cyl Engine.jpg"),
+  oilFilterAlt: enc("/6l Original Amg 0w40 Motoröl + Hengst Ölfilter Für Mercedes 45amg 2781800009.jpg"),
+  airFilter: enc("/Air Filter Filtron Ap 148 Oe Replacement.jpg"),
+  cabinFilter: enc("/Mercedes Benz C W203 Cabin Pollen Filter A2038301018 Genuine.jpg"),
+  engine: enc("/Engine Block Options for Building Big-Inch LS Engines • LS Engine DIY.jpg"),
+  wiperBlades: enc("/Bosch Windshield Wiper Blade Set Front 4478205400 Mercedes Benz Metris.jpg"),
+  wiperBladesAlt: enc("/Mercedes-AMG C63 2016-2023 (C205) Coupe Replacement Wiper Blades Front Pair.jpg"),
+  brakePads: enc("/Mercedes-Benz Brake Pad Set - GENUINE MERCEDES 0034206220.jpg"),
+  brakePadsGeneric: enc("/Brake Pads, Brake Shoe Supplier & Manufacturer in China.jpg"),
+  brakeRotors: enc("/Front Brake Rotor Set - Compatible with 2011 - 2020 Hyundai Elantra Sedan 2012 2013 2014 2015 2016 2017 2018 2019.jpg"),
+  turbocharger: enc("/Turbo Charger For Mercedes Sprinter 904 903 901 902 1995-2006 - Top Quality.jpg"),
+  alternator: enc("/New Alternator For Mercedes Benz C300 Glk350 Ir_If 12-Volt 150 Amp 000-906-12-02, Size_Universal.jpg"),
+  waterPump: enc("/Car accessories Engine Water Pump for Mercedes Benz C180 C200 C250 C300 E200 C204 W204 W212 2742000800 2742001407 2742000701 2742000601 Auto parts Cooling System Water Coolant Pump.jpg"),
+  battery100Ah: enc("/Replacement Battery Type 019 - 12v 100ah Lucas Ls019 - Fits Mercedes Benz.jpg"),
+  batteryAgm: enc("/Varta 560901068j382 Starterbatterie Varta Agm Xev A8 Für Abarth Alfa Romeo.jpg"),
 };
 
 export const parts = [
